@@ -1,5 +1,5 @@
 # TIL
-##Today I Learned
+## Today I Learned
 
 ### 2020.05.09
 - [@MappedSuperclass](https://www.notion.so/3hourstrudy/MappedSuperclass-fa676270f9bf48819d08ccf20a97c061)
