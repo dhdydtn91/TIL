@@ -1,6 +1,12 @@
 # TIL
 ## Today I Learned
 
+### TIL 규칙 
+- 공부한 것은 반드시 기록으로 남겨 놓는다.(링크 첨부)
+- 커밋을 위한 TIL을 하지 않는다. 
+
+##[TIL 개인 위키](https://www.notion.so/3hourstrudy/TIL-WIKI-5f4465935fdd456e89eca327f1f793de)
+
 ### 2020.05.09
 - [@MappedSuperclass](https://www.notion.so/3hourstrudy/MappedSuperclass-fa676270f9bf48819d08ccf20a97c061)
 - [JPA 프록시객체](https://www.notion.so/3hourstrudy/JPA-11f1e40d06fa4e2d8be7c5abfcb33e9a)
@@ -11,3 +17,6 @@
 - [값타입 (임베디드 타입)](https://www.notion.so/3hourstrudy/c2d9b18ca2c14c67823d449de5d98294)
 - [값타입과 불변객체](https://www.notion.so/3hourstrudy/dc92624182744e16aeeef144ebcb69d8)
 - [값타입 컬렉션](https://www.notion.so/3hourstrudy/8aa3ab8afa454692893383b916c56ef1)
+
+### 2020.05.11
+- [JQPL 조회부부터 페이징까지](https://www.notion.so/3hourstrudy/JPQL-61a8deba9ffb4760ac2bc43da2d3b333)
