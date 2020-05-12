@@ -19,4 +19,7 @@
 - [값타입 컬렉션](https://www.notion.so/3hourstrudy/8aa3ab8afa454692893383b916c56ef1)
 
 ### 2020.05.11
-- [JQPL 조회부부터 페이징까지](https://www.notion.so/3hourstrudy/JPQL-61a8deba9ffb4760ac2bc43da2d3b333)
+- [JPQL 조회부부터 페이징까지](https://www.notion.so/3hourstrudy/JPQL-61a8deba9ffb4760ac2bc43da2d3b333)
+
+### 2020.05.12
+- [JPQL 조인,서브쿼리,기본 함수까지](https://www.notion.so/3hourstrudy/JPQL-61a8deba9ffb4760ac2bc43da2d3b333)
