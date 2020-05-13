@@ -5,7 +5,7 @@
 - 공부한 것은 반드시 기록으로 남겨 놓는다.(링크 첨부)
 - 커밋을 위한 TIL을 하지 않는다. 
 
-[TIL 개인 위키](https://www.notion.so/3hourstrudy/TIL-WIKI-5f4465935fdd456e89eca327f1f793de) 바로가기 
+[TIL 개인 위키 바로가기](https://www.notion.so/3hourstrudy/TIL-WIKI-60935a27129f41578f921f6bb108dd95)  
 
 ### 2020.05.09
 - [@MappedSuperclass](https://www.notion.so/3hourstrudy/MappedSuperclass-fa676270f9bf48819d08ccf20a97c061)
