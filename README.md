@@ -23,3 +23,7 @@
 
 ### 2020.05.12
 - [JPQL 조인,서브쿼리,기본 함수까지](https://www.notion.so/3hourstrudy/JPQL-61a8deba9ffb4760ac2bc43da2d3b333)
+
+### 2020.05.13
+- [JPQL 경로 표현식](https://www.notion.so/3hourstrudy/JPQL-60136694c98a4c79b8e0336398f6c491)
+- [JQPL fetch 조인](https://www.notion.so/3hourstrudy/fetch-join-8b2e9779a193467a9accd4a5b9c82ef3)
