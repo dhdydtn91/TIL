@@ -2,7 +2,7 @@
 ## Today I Learned
 
 ### TIL 규칙 
-- 공부한 것은 반드시 기록으로 남겨 놓는다.(링크 첨부)
+- 공부한 것은 반드시 기록으로 남겨 놓는다.(링크 첨부) 
 - 커밋을 위한 TIL을 하지 않는다. 
 
 [TIL 개인 위키 바로가기](https://www.notion.so/3hourstrudy/TIL-WIKI-60935a27129f41578f921f6bb108dd95)  
@@ -29,4 +29,4 @@
 - [JPQL fetch 조인](https://www.notion.so/3hourstrudy/fetch-join-8b2e9779a193467a9accd4a5b9c82ef3)
 
 ### 2020.05.14
-= [JPQL 나머지 정리](https://www.notion.so/3hourstrudy/JPQL-2c1527df7960434eac9327344d643580)
+- [JPQL 나머지 정리](https://www.notion.so/3hourstrudy/JPQL-2c1527df7960434eac9327344d643580)
