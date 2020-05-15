@@ -26,4 +26,7 @@
 
 ### 2020.05.13
 - [JPQL 경로 표현식](https://www.notion.so/3hourstrudy/JPQL-60136694c98a4c79b8e0336398f6c491)
-- [JQPL fetch 조인](https://www.notion.so/3hourstrudy/fetch-join-8b2e9779a193467a9accd4a5b9c82ef3)
+- [JPQL fetch 조인](https://www.notion.so/3hourstrudy/fetch-join-8b2e9779a193467a9accd4a5b9c82ef3)
+
+### 2020.05.14
+= [JPQL 나머지 정리](https://www.notion.so/3hourstrudy/JPQL-2c1527df7960434eac9327344d643580)
