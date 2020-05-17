@@ -30,3 +30,12 @@
 
 ### 2020.05.14
 - [JPQL 나머지 정리](https://www.notion.so/3hourstrudy/JPQL-2c1527df7960434eac9327344d643580)
+
+### 2020.05.15
+- [Javascript 문자열 찾기함수 정리](https://www.notion.so/3hourstrudy/3411996f54634a7a8a2178e93c692baf?v=146013900c7c44f4a3129f2d9d3cae7d&p=9bfa19fa0bd04fc09a62931722569869)
+
+### 2020.05.16
+- [xUnit 테스팅 프레임워크를 TDD로 만들어보자](https://github.com/dhdydtn91/xunitTDD)
+
+### 2020.05.17
+- [xUnit 테스팅 프레임워크를 TDD로 만들어보자 - 어려워서 한번더 보고 정리](https://www.notion.so/3hourstrudy/38c720ed5ed54555aa92286756337d15?v=818867695e2946c0b5259f44f71d2e2c&p=7e9cedd5671d4cb4ad306dbc928efcc7)
