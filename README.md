@@ -39,3 +39,6 @@
 
 ### 2020.05.17
 - [xUnit 테스팅 프레임워크를 TDD로 만들어보자 - 어려워서 한번더 보고 정리](https://www.notion.so/3hourstrudy/38c720ed5ed54555aa92286756337d15?v=818867695e2946c0b5259f44f71d2e2c&p=7e9cedd5671d4cb4ad306dbc928efcc7)
+
+### 2020.05.19
+- [서블릿 애플리케이션](https://www.notion.so/3hourstrudy/a71d8223e5304500b0c5e527457835da)
