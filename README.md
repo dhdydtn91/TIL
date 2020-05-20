@@ -42,3 +42,6 @@
 
 ### 2020.05.19
 - [서블릿 애플리케이션](https://www.notion.so/3hourstrudy/a71d8223e5304500b0c5e527457835da)
+
+### 2020.05.20
+- [Maven 설치하기](https://www.notion.so/3hourstrudy/dda07f0782b64efa85458b97a1cc4130?v=5ad5dc08e69747169d9c216a1956c747&p=8d5593c729ae4afa88180b15c3e0f9b4)
