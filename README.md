@@ -51,3 +51,9 @@
 
 ### 2020.05.22
 - [Thymeleaf](https://www.notion.so/3hourstrudy/dda07f0782b64efa85458b97a1cc4130?v=5ad5dc08e69747169d9c216a1956c747)
+
+### 2020.05.23
+- 스프링부트와 JPA를 사용해서 환경세팅하는방법을 배웠다.
+- 도메인 모델과 테이블 구조를 보고 엔티티로 구현하는 방법을 배움 
+- 구현소스 [Jpashop 예제 엔티티 구현까지](https://github.com/dhdydtn91/jpashop)  -김영한님 강의
+
