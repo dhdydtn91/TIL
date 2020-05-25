@@ -57,7 +57,10 @@
 - 도메인 모델과 테이블 구조를 보고 엔티티로 구현하는 방법을 배움 
 - 구현소스 [Jpashop 예제 엔티티 구현까지](https://github.com/dhdydtn91/jpashop)  -김영한님 강의
 
-### 2020.05.23
+### 2020.05.24
 - jpashop MemberRepository, MemberService 및 테스트 코드 작성 
 - [Spring Boot+InteliJ로 개발시 tip 정리](https://www.notion.so/3hourstrudy/Spring-Boot-InteliJ-tip-029bd13fad224a5cbfe84252c17d3e07)
 - [JPA 도메인설계시 주의점](https://www.notion.so/3hourstrudy/JPA-0ae51c9b5d5742b2b72f7f0301bed596)
+
+### 2020.05.25
+- [김영한님 강의 주문,주문상품 엔티티개발까지](https://github.com/dhdydtn91/jpashop)
