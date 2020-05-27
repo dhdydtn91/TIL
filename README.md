@@ -64,3 +64,10 @@
 
 ### 2020.05.25
 - [김영한님 강의 주문,주문상품 엔티티개발까지](https://github.com/dhdydtn91/jpashop)
+
+### 2020.05.26
+- [김영한님 강의 주문서비스까지까지](https://github.com/dhdydtn91/jpashop)
+
+### 2020.05.27
+- [JPA Repository 구현하기](https://www.notion.so/3hourstrudy/JPA-Repository-b3759f095ced4d5692204c3b92667f0d)
+- [JPASHOP 비니지스 로직 분석](https://www.notion.so/3hourstrudy/Jpa-shop-98f9fd07458e42c3a4d53f60bff34b5b)
