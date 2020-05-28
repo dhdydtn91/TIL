@@ -71,3 +71,6 @@
 ### 2020.05.27
 - [JPA Repository 구현하기](https://www.notion.so/3hourstrudy/JPA-Repository-b3759f095ced4d5692204c3b92667f0d)
 - [JPASHOP 비니지스 로직 분석](https://www.notion.so/3hourstrudy/Jpa-shop-98f9fd07458e42c3a4d53f60bff34b5b)
+
+### 2020.05.28
+- [단위테스트 만들기](https://www.notion.so/3hourstrudy/72582f9b3ba74aa2a40acb5a1a6fb322)
