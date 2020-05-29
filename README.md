@@ -74,3 +74,9 @@
 
 ### 2020.05.28
 - [단위테스트 만들기](https://www.notion.so/3hourstrudy/72582f9b3ba74aa2a40acb5a1a6fb322)
+
+### 2020.05.29
+- [김영한님 강의 주문검색기능까지](https://github.com/dhdydtn91/jpashop)
+
+### 2020.05.30
+- [김영한님 강의 홈화면과 레이아웃까지](https://github.com/dhdydtn91/jpashop)
