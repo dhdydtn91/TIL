@@ -80,3 +80,12 @@
 
 ### 2020.05.30
 - [김영한님 강의 홈화면과 레이아웃까지](https://github.com/dhdydtn91/jpashop)
+
+### 2020.05.31
+- [김영한님 강의 주문 수정 화면 구현까지](https://github.com/dhdydtn91/jpashop)
+
+### 2020.06.01
+- [주문 검색 ,취소 (JPA웹개발1 강의 끝)](https://github.com/dhdydtn91/jpashop)
+
+### 2020.06.02
+- [회원 등록 API - JPA 웹개발2 강의 (김영한님 강의) 시작](https://github.com/dhdydtn91/jpashop)
