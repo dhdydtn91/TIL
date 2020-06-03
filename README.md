@@ -89,3 +89,6 @@
 
 ### 2020.06.02
 - [회원 등록 API - JPA 웹개발2 강의 (김영한님 강의) 시작](https://github.com/dhdydtn91/jpashop)
+
+### 2020.06.03
+- [조회용 샘플 데이터 입력 까지 -JPA 웹개발2 강의](https://github.com/dhdydtn91/jpashop)
