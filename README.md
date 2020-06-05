@@ -92,3 +92,9 @@
 
 ### 2020.06.03
 - [조회용 샘플 데이터 입력 까지 -JPA 웹개발2 강의](https://github.com/dhdydtn91/jpashop)
+
+### 2020.06.04 
+ -[주문api JPA로 튜닝하기 3단계](https://github.com/dhdydtn91/jpashop) 
+
+### 2020.06.05
+ -[주민api JPA로 튜닝 4단계 최종](https://github.com/dhdydtn91/jpashop)
