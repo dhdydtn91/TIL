@@ -94,7 +94,16 @@
 - [조회용 샘플 데이터 입력 까지 -JPA 웹개발2 강의](https://github.com/dhdydtn91/jpashop)
 
 ### 2020.06.04 
- -[주문api JPA로 튜닝하기 3단계](https://github.com/dhdydtn91/jpashop) 
+ - [주문 API 튜닝 3단계](https://github.com/dhdydtn91/jpashop) 
 
-### 2020.06.05
- -[주민api JPA로 튜닝 4단계 최종](https://github.com/dhdydtn91/jpashop)
+### 2020.06.05 
+ - [주문 API JPA로 튜닝 최종(엔티티)](https://github.com/dhdydtn91/jpashop) 
+ 
+### 2020.06.06 
+ - [컬렉션 조회 최적화 - 패치조인 최적화(DTO조회)](https://github.com/dhdydtn91/jpashop) 
+ 
+### 2020.06.07
+ - [JPA 웹개발 2강 끝](https://github.com/dhdydtn91/jpashop)
+ 
+### 2020.06.08
+ - [Spring data jpa 강의 시작 - 환경설정](https://github.com/dhdydtn91/spring-data-jpa/commits/master)
