@@ -107,3 +107,6 @@
  
 ### 2020.06.08
  - [Spring data jpa 강의 시작 - 환경설정](https://github.com/dhdydtn91/spring-data-jpa/commits/master)
+ 
+### 2020.06.09
+ - [도메인 설계 및 테스트 코드 작성, 순수JPA repository 만들고 테스트 코드 작성](https://github.com/dhdydtn91/spring-data-jpa/commits/master)
