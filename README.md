@@ -110,3 +110,12 @@
  
 ### 2020.06.09
  - [도메인 설계 및 테스트 코드 작성, 순수JPA repository 만들고 테스트 코드 작성](https://github.com/dhdydtn91/spring-data-jpa/commits/master)
+ 
+### 2020.06.10
+ - [Named Query, Repository에서 직접 @query정의하기, Dto로 조회, 컬렉션 파라미터 바인딩](https://github.com/dhdydtn91/spring-data-jpa/tree/677a54cf3a06c73ae0d7ae9245e27385b72c18d7)
+
+### 2020.06.11
+ - [Spring data JPA 반환타입, Spring data JPA와 JPA의 각각 페이징 방식 구현](https://github.com/dhdydtn91/spring-data-jpa/tree/244d4a086df398bfa1859115c6ec7290d8f1988c)
+ 
+### 2020.06.12
+ - [벌크성 수정 쿼리 사용법과 주의점, EntityGraph 사용법](https://github.com/dhdydtn91/spring-data-jpa/tree/5d8ebaf39f6fe06d6752c199caf7c192533e258b)
