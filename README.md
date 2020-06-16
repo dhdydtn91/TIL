@@ -119,3 +119,16 @@
  
 ### 2020.06.12
  - [벌크성 수정 쿼리 사용법과 주의점, EntityGraph 사용법](https://github.com/dhdydtn91/spring-data-jpa/tree/5d8ebaf39f6fe06d6752c199caf7c192533e258b)
+
+### 2020.06.13
+ - [JPA hint 사용법, 사용자 정의 리포지토리 구현방법, Auditing 방법](https://github.com/dhdydtn91/spring-data-jpa/tree/30799dd2b865eff9931db5455f0355e5e7558b0d)
+ 
+ ### 2020.06.14
+ - [도메인 클래스 컨버터, 페이징 정렬, save와 merge](https://github.com/dhdydtn91/spring-data-jpa/tree/619ac5bd46002f9982d3dde99148d7cf144e9bc4)
+ 
+ ### 2020.06.15 
+ - [Junit 테스트 실행 전후 메서드 실행 및 Assertion 종류 및 사용법](https://github.com/dhdydtn91/inflearn-the-java-test/tree/d9c3d405b048ec8098d3738b9b4ee1388cd63caf)
+ 
+ ### 2020.06.16
+ - [Junit 조건에 따라 테스트 실행하기](https://github.com/dhdydtn91/inflearn-the-java-test)
+ - [Junit 사용법 익히기 - 정리](https://www.notion.so/3hourstrudy/Junit-a1e635aac836455eaf8a3c42dbe93f8f)
