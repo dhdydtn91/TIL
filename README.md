@@ -132,3 +132,11 @@
  ### 2020.06.16
  - [Junit 조건에 따라 테스트 실행하기](https://github.com/dhdydtn91/inflearn-the-java-test)
  - [Junit 사용법 익히기 - 정리](https://www.notion.so/3hourstrudy/Junit-a1e635aac836455eaf8a3c42dbe93f8f)
+ 
+ ### 2020.06.17
+ - [Junit 테스트 반복해서 실행하기](https://github.com/dhdydtn91/inflearn-the-java-test/tree/37fc5f64f286ad6321aebd0b24ca64c7f7830502)
+ - [Junit 사용법 익히기 - 정리(테스트 반복하기 정리 추가)](https://www.notion.so/3hourstrudy/Junit-a1e635aac836455eaf8a3c42dbe93f8f)
+ 
+  ### 2020.06.18
+ - [테스트 반복하기, 테스트 인스턴스, 테스트 순서, Junit 설정 파일 정리](https://github.com/dhdydtn91/inflearn-the-java-test/tree/c5b40ad51cb72bc608f492b5dc90a2d90a6da523)
+ - [Junit 사용법 익히기 - 정리(테스트 반복하기, 테스트 인스턴스, 테스트 순서, Junit 설정 파일 정리 추가)](https://www.notion.so/3hourstrudy/Junit-a1e635aac836455eaf8a3c42dbe93f8f)
