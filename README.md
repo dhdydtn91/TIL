@@ -140,3 +140,11 @@
   ### 2020.06.18
  - [테스트 반복하기, 테스트 인스턴스, 테스트 순서, Junit 설정 파일 정리](https://github.com/dhdydtn91/inflearn-the-java-test/tree/c5b40ad51cb72bc608f492b5dc90a2d90a6da523)
  - [Junit 사용법 익히기 - 정리(테스트 반복하기, 테스트 인스턴스, 테스트 순서, Junit 설정 파일 정리 추가)](https://www.notion.so/3hourstrudy/Junit-a1e635aac836455eaf8a3c42dbe93f8f)
+ 
+  ### 2020.06.19
+ - [Mokito 연습예제까지](https://github.com/dhdydtn91/inflearn-the-java-test)
+ - [Mokito 사용하기 - 정리](https://www.notion.so/3hourstrudy/Mockito-fbeca9539dda4ed7aac15a43f7ce96bb)
+ 
+  ### 2020.06.20 
+  -[오브젝트 4장 읽고 정리하기](https://www.notion.so/3hourstrudy/4-23f9ff2cca41418fa4ee9f74aff1f93d)
+ 
