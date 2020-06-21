@@ -146,5 +146,8 @@
  - [Mokito 사용하기 - 정리](https://www.notion.so/3hourstrudy/Mockito-fbeca9539dda4ed7aac15a43f7ce96bb)
  
   ### 2020.06.20 
-  -[오브젝트 4장 읽고 정리하기](https://www.notion.so/3hourstrudy/4-23f9ff2cca41418fa4ee9f74aff1f93d)
- 
+  - [오브젝트 4장 읽고 정리하기](https://www.notion.so/3hourstrudy/4-23f9ff2cca41418fa4ee9f74aff1f93d)
+  
+  ### 2020.06.21
+ - [Mokito 객체사용하기 정리(Mokito 끝)](https://www.notion.so/3hourstrudy/Mockito-fbeca9539dda4ed7aac15a43f7ce96bb)
+ - [팀프로젝트 시작 - 요구사항 정리](https://www.notion.so/3hourstrudy/6-21-4c13ae5b33934bb4955376cad59ee9f6)
