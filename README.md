@@ -157,3 +157,6 @@
  
   ### 2020.06.23
  - [오브젝트 6장 읽고 정리하기](https://www.notion.so/3hourstrudy/6-60c70a2affdb4a38b74d6e0708fc9286)
+ 
+  ### 2020.06.23
+ - [오브젝트 7장 읽고 정리하기](https://www.notion.so/3hourstrudy/7-806a6d87a1e84b0492016bddfd1fe4ce)
