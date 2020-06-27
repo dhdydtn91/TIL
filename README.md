@@ -158,11 +158,14 @@
   ### 2020.06.23
  - [오브젝트 6장 읽고 정리하기](https://www.notion.so/3hourstrudy/6-60c70a2affdb4a38b74d6e0708fc9286)
  
-  ### 2020.06.23
+  ### 2020.06.24
  - [오브젝트 7장 읽고 정리하기](https://www.notion.so/3hourstrudy/7-806a6d87a1e84b0492016bddfd1fe4ce)
  
-  ### 2020.06.24
+  ### 2020.06.25
  - [오브젝트 8장 읽고 정리하기](https://www.notion.so/3hourstrudy/8-7bbb94bb0e5248f38e953c475b022b93)
  
-  ### 2020.06.25
+  ### 2020.06.26
  - [오브젝트 9장 읽고 정리하기](https://www.notion.so/3hourstrudy/9-89ba606af8c04dcf9227a9043871cae7)
+ 
+  ### 2020.06.27
+ - [팀프로젝트 설계 - 도메인 설계](https://www.notion.so/3hourstrudy/6-27-0366e8f7ebe94726bf2dfcd84f1853b8)
