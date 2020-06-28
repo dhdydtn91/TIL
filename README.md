@@ -169,3 +169,6 @@
  
   ### 2020.06.27
  - [팀프로젝트 설계 - 도메인 설계](https://www.notion.so/3hourstrudy/6-27-0366e8f7ebe94726bf2dfcd84f1853b8)
+ 
+  ### 2020.06.28
+ - [오브젝트 10장 읽고 정리하기](https://www.notion.so/3hourstrudy/10-41219bf1f4c2439e83d634c281f0ed67)
