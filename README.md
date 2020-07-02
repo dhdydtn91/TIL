@@ -172,3 +172,15 @@
  
   ### 2020.06.28
  - [오브젝트 10장 읽고 정리하기](https://www.notion.so/3hourstrudy/10-41219bf1f4c2439e83d634c281f0ed67)
+ 
+  ### 2020.06.29
+ - [오브젝트 2장 보면서 예제 따라 쳐보기](https://github.com/dhdydtn91/TIL/tree/master/Object%20Exam/src)
+  
+  ### 2020.06.30
+ - [오브젝트 11장 읽고 정리하기](https://www.notion.so/3hourstrudy/11-0b8bc6000dc4424d96e3c3209e160342)
+ 
+  ### 2020.07.01
+ - [오브젝트 12장 읽고 정리하기](https://www.notion.so/3hourstrudy/12-3c77dcc81fc1423a800fcaa56d5ecefa)
+
+  ### 2020.07.02
+ - [오브젝트 13장 읽고 정리하기](https://www.notion.so/3hourstrudy/13-d6ee513146c6461ebb3e1c5ca965e941)
