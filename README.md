@@ -181,6 +181,9 @@
  
   ### 2020.07.01
  - [오브젝트 12장 읽고 정리하기](https://www.notion.so/3hourstrudy/12-3c77dcc81fc1423a800fcaa56d5ecefa)
+<<<<<<< HEAD
 
   ### 2020.07.02
  - [오브젝트 13장 읽고 정리하기](https://www.notion.so/3hourstrudy/13-d6ee513146c6461ebb3e1c5ca965e941)
+=======
+>>>>>>> origin/master
