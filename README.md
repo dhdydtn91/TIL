@@ -187,3 +187,6 @@
 
   ### 2020.07.03
  - [오브젝트 14장 읽고 정리하기](https://www.notion.so/3hourstrudy/14-9e987549434b4b88ae36315c7ec7279a)
+ 
+  ### 2020.07.04
+ - [오브젝트 15장 읽고 정리하기](https://www.notion.so/3hourstrudy/15-a1b3a04c61b946beaf98384fa6a4cc51)
