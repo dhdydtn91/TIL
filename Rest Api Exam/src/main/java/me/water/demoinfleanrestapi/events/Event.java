@@ -27,4 +27,19 @@ public class Event {
     private boolean free;
     @Enumerated(EnumType.STRING)
     private EventStatus eventStatus = EventStatus.DRAFT;
+
+    public void update() {
+        //Update
+        if(this.basePrice == 0 && this.maxPrice == 0){
+            this.free = true;
+        } else {
+            this.free = false;
+        }
+        //Update offline
+        if (this.location == null || this.location.isBlank()) {  //isBlank() 공백을 빈값으로 처리 isEmpty와는 " " false 처리하는 차이가있음
+            this.offline = false;
+        }else{
+            this.offline = true;
+        }
+    }
 }

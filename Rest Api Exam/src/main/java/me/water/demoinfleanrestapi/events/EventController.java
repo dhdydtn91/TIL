@@ -33,13 +33,14 @@ public class EventController {
     @PostMapping
     public ResponseEntity createEvent(@RequestBody @Valid EventDto eventDto, Errors errors) {
         if (errors.hasErrors()){
-            return ResponseEntity.badRequest().build();
+            return ResponseEntity.badRequest().body(errors);
         }
         eventValidator.validate(eventDto,errors);
         if (errors.hasErrors()){
-            return ResponseEntity.badRequest().build();
+            return ResponseEntity.badRequest().body(errors);
         }
         Event event = modelMapper.map(eventDto, Event.class);
+        event.update();
         //EventDto -> Event 변환  reflection으로 변환하는것이기 떄문에 성능적인 부분을 고려한다면
         //직접 코드를 작성하는 것이 좋음
         Event newEvent = this.eventRepository.save(event);
