@@ -31,21 +31,21 @@
 ### Javascript
 - [Javascript 문자열 찾기함수 정리](https://www.notion.so/3hourstrudy/3411996f54634a7a8a2178e93c692baf?v=146013900c7c44f4a3129f2d9d3cae7d&p=9bfa19fa0bd04fc09a62931722569869)
 
-
 ### 테스트
 - [xUnit 테스팅 프레임워크를 TDD로 만들어보자 - 어려워서 한번더 보고 정리](https://www.notion.so/3hourstrudy/38c720ed5ed54555aa92286756337d15?v=818867695e2946c0b5259f44f71d2e2c&p=7e9cedd5671d4cb4ad306dbc928efcc7)
 - [단위테스트 만들기](https://www.notion.so/3hourstrudy/72582f9b3ba74aa2a40acb5a1a6fb322)
 - [Junit 사용법 익히기 - 정리](https://www.notion.so/3hourstrudy/Junit-a1e635aac836455eaf8a3c42dbe93f8f)
 - [Mokito 사용하기 - 정리](https://www.notion.so/3hourstrudy/Mockito-fbeca9539dda4ed7aac15a43f7ce96bb)
 
-### BackEnd
+### BackEnd(Spring)
 - [서블릿 애플리케이션](https://www.notion.so/3hourstrudy/a71d8223e5304500b0c5e527457835da)
 - [Maven 설치하기](https://www.notion.so/3hourstrudy/dda07f0782b64efa85458b97a1cc4130?v=5ad5dc08e69747169d9c216a1956c747&p=8d5593c729ae4afa88180b15c3e0f9b4)
 - [DispatcherServlet](https://www.notion.so/3hourstrudy/dda07f0782b64efa85458b97a1cc4130?v=5ad5dc08e69747169d9c216a1956c747)
+- [Event 도메인 설계 및 컨트롤러 구현](https://www.notion.so/3hourstrudy/Event-6fd3b4181988424ab0b4d97cbc2008a8)
+- [입력값 제한하기  vs 입력값에 에러 발생](https://www.notion.so/3hourstrudy/vs-d7d6c2bc44774254a71fa83d67d82a58)
 
-### FrontEnd
+### 템플릿엔진
 - [Thymeleaf](https://www.notion.so/3hourstrudy/dda07f0782b64efa85458b97a1cc4130?v=5ad5dc08e69747169d9c216a1956c747)
-
 
 ### 객체지향
 - [오브젝트 4장 읽고 정리하기](https://www.notion.so/3hourstrudy/4-23f9ff2cca41418fa4ee9f74aff1f93d)
