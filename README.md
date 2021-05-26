@@ -60,4 +60,10 @@
 - [오브젝트 13장 읽고 정리하기](https://www.notion.so/3hourstrudy/13-d6ee513146c6461ebb3e1c5ca965e941)
 - [오브젝트 14장 읽고 정리하기](https://www.notion.so/3hourstrudy/14-9e987549434b4b88ae36315c7ec7279a)
 - [오브젝트 15장 읽고 정리하기](https://www.notion.so/3hourstrudy/15-a1b3a04c61b946beaf98384fa6a4cc51)
+
+### 토비의 스프링 
+- [오브젝트와 의존관계](https://www.notion.so/3hourstrudy/2eed40f1c9844970aba1a087cc036a2a)
+- [테스트](https://www.notion.so/3hourstrudy/a3b0abbfd2804195b807ac6a13a4955a)
+- [템플릿](https://www.notion.so/3hourstrudy/f382b339436042399ce8f3fa7e2ecd67)
+- [예외](https://www.notion.so/3hourstrudy/80ffbee491a845809b3ab49b8e1a3113)
  
