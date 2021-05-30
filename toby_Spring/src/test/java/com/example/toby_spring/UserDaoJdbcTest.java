@@ -1,19 +1,15 @@
 package com.example.toby_spring;
 
+import com.example.toby_spring.dao.UserDao;
+import com.example.toby_spring.dao.UserDaoJdbc;
+import com.example.toby_spring.domain.Level;
+import com.example.toby_spring.domain.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.junit.jupiter.params.ParameterizedTest;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.dao.EmptyResultDataAccessException;
-import org.springframework.jdbc.datasource.SimpleDriverDataSource;
-import org.springframework.test.annotation.DirtiesContext;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import javax.sql.DataSource;
 import java.sql.SQLException;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -22,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @SpringBootTest
-class UserDaoTest {
+class UserDaoJdbcTest {
 
     @Autowired
     private UserDao dao;
@@ -31,12 +27,13 @@ class UserDaoTest {
 
     private User user1;
     private User user2;
+    private User user3;
 
     @BeforeEach
     void setUp() {
-        user1 = new User("gymee", "박성철", "springno1");
-        user2 = new User("gymee", "박성철", "springno1");
-
+        user1 = new User("ohmin", "오민규", "springno1", Level.BASIC, 1, 0);
+        user2 = new User("gymee", "박성철", "springno2", Level.SILVER, 55, 10);
+        user3 = new User("bumjin", "박범진", "springno3", Level.GOLD, 100, 40);
     }
 
     @Test
@@ -55,17 +52,18 @@ class UserDaoTest {
         assertThat(dao.getCount()).isEqualTo(2);
 
         User userGet1 = dao.get(user1.getId());
-
-        //Junit 5문법
-        assertEquals(user1.getId(), userGet1.getId());
-        assertEquals(user1.getPassword(), userGet1.getPassword());
+        checkUser(user1, userGet1);
 
         User userGet2 = dao.get(user2.getId());
+        checkUser(user2, userGet2);
+    }
 
-        //Junit 5문법
-        assertEquals(user2.getId(), userGet2.getId());
-        assertEquals(user2.getPassword(), userGet2.getPassword());
-
+    private void checkUser(User user, User user2) {
+        assertEquals(user.getId(), user2.getId());
+        assertEquals(user.getPassword(), user2.getPassword());
+        assertEquals(user.getLevel(), user2.getLevel());
+        assertEquals(user.getLogin(), user2.getLogin());
+        assertEquals(user.getRecommend(), user2.getRecommend());
     }
 
     @Test
@@ -79,8 +77,8 @@ class UserDaoTest {
         dao.add(user2);
         assertThat(dao.getCount()).isEqualTo(2);
 
-//        dao.add(user3);
-//        assertThat(dao.getCount()).isEqualTo(3);
+        dao.add(user3);
+        assertThat(dao.getCount()).isEqualTo(3);
     }
 
     @Test
@@ -98,4 +96,20 @@ class UserDaoTest {
         assertThrows(EmptyResultDataAccessException.class, () -> dao.get("unknown_id"));
     }
 
+    @Test
+    public void update() throws SQLException {
+        dao.deleteAll();
+
+        dao.add(user1);
+
+        user1.setName("오민규");
+        user1.setPassword("springno6");
+        user1.setLevel(Level.GOLD);
+        user1.setLogin(1000);
+        user1.setRecommend(999);
+        dao.update(user1);
+
+        User user1update = dao.get(user1.getId());
+        checkUser(user1, user1update);
+    }
 }

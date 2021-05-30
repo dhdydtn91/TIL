@@ -1,4 +1,4 @@
-package com.example.toby_spring;
+package com.example.toby_spring.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

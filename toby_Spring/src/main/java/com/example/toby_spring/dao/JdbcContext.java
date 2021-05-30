@@ -1,4 +1,4 @@
-package com.example.toby_spring;
+package com.example.toby_spring.dao;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -11,11 +11,7 @@ public class JdbcContext {
     public JdbcContext(DataSource dataSource) {
         this.dataSource = dataSource;
     }
-
-    public void setDataSource(DataSource dataSource) {
-        this.dataSource = dataSource;
-    }
-
+    
     public void workWithStatementStrategy(StatementStrategy stmt) throws SQLException {
         Connection c = null;
         PreparedStatement ps = null;
