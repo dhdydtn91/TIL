@@ -61,9 +61,22 @@
 - [오브젝트 14장 읽고 정리하기](https://www.notion.so/3hourstrudy/14-9e987549434b4b88ae36315c7ec7279a)
 - [오브젝트 15장 읽고 정리하기](https://www.notion.so/3hourstrudy/15-a1b3a04c61b946beaf98384fa6a4cc51)
 
-### 토비의 스프링 
+### 토비의 스프링  (1권)
 - [오브젝트와 의존관계](https://www.notion.so/3hourstrudy/2eed40f1c9844970aba1a087cc036a2a)
 - [테스트](https://www.notion.so/3hourstrudy/a3b0abbfd2804195b807ac6a13a4955a)
 - [템플릿](https://www.notion.so/3hourstrudy/f382b339436042399ce8f3fa7e2ecd67)
 - [예외](https://www.notion.so/3hourstrudy/80ffbee491a845809b3ab49b8e1a3113)
- 
+- [서비스 추상화](https://www.notion.so/3hourstrudy/748fe0318bfb4384b36035c4d3d8d549)
+- [AOP](https://www.notion.so/3hourstrudy/AOP-a455b34b987046e18356f4026f228b37)
+- [스프링 핵심 기술의 응용](https://www.notion.so/3hourstrudy/2a3b10be476b47b4a7985b5e06f6d435)
+- [스프링이란 무엇인가?](https://www.notion.so/3hourstrudy/0ee5b1c66af74e728df1c527e47e7f84)
+- [스프링 프로젝트 시작하기](https://www.notion.so/3hourstrudy/fb8361718b1b479fbe0574dea18b6ed0)
+
+### 토비의 스프링  (2권)
+- [IoC  컨테이너와 DI](https://www.notion.so/3hourstrudy/IoC-DI-2-b8ea9096cf974023ad2eaa936110afcf)
+
+
+### 컨테이너 인프라 환경 구축을 위한 쿠버네티스/도커
+- [새로운 인프라 환경이 온다.](https://www.notion.so/3hourstrudy/5a45267d555342ed84452411fc12db7f)
+- [테스트 환경 구성하기](https://www.notion.so/3hourstrudy/dfd35b64b113473e97b62ffc2af74346)
+- [컨테이너를 다루는 표준 아키텍처, 쿠버네티스](https://www.notion.so/3hourstrudy/27545aeddc19467591163ed359eab3de)
