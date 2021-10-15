@@ -9,18 +9,32 @@ package com.security.basic.config.auth;
 //Security Session => Authentication => UserDetails(PrincipalDetails)
 
 import com.security.basic.model.User;
+import lombok.Getter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.oauth2.core.user.OAuth2User;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Map;
 
-public class PrincipalDetails implements UserDetails {
+@Getter
+public class PrincipalDetails implements UserDetails , OAuth2User {
 
     private final User user;
 
     public PrincipalDetails(User user) {
         this.user = user;
+    }
+
+    @Override
+    public Map<String, Object> getAttributes() {
+        return null;
+    }
+
+    @Override
+    public String getName() {
+        return null;
     }
 
     //해당 User의 권한을 리턴하는 곳
@@ -61,4 +75,5 @@ public class PrincipalDetails implements UserDetails {
         //우리 사이트!! 1년동안 회원이 로그인을 안하면 휴먼계정으로 하기로 함.
         return true;
     }
+
 }
