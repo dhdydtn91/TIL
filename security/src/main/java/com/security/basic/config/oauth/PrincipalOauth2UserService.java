@@ -36,26 +36,26 @@ public class PrincipalOauth2UserService extends DefaultOAuth2UserService {
         System.out.println("oAuth2User = " + oAuth2User.getAttributes());
 
         Oauth2UserInfo oauth2UserInfo = null;
-        if(userRequest.getClientRegistration().getRegistrationId().equals("google")){
+        if (userRequest.getClientRegistration().getRegistrationId().equals("google")) {
             oauth2UserInfo = new GoogleUserInfo(oAuth2User.getAttributes());
-        }else if(userRequest.getClientRegistration().getRegistrationId().equals("facebook")){
+        } else if (userRequest.getClientRegistration().getRegistrationId().equals("facebook")) {
             oauth2UserInfo = new FacebookUserInfo(oAuth2User.getAttributes());
-        }else if(userRequest.getClientRegistration().getRegistrationId().equals("naver")){
-            oauth2UserInfo = new FacebookUserInfo((Map)oAuth2User.getAttributes().get("response"));
+        } else if (userRequest.getClientRegistration().getRegistrationId().equals("naver")) {
+            oauth2UserInfo = new FacebookUserInfo((Map) oAuth2User.getAttributes().get("response"));
         }
         User byUsername = null;
 
-        if(oauth2UserInfo != null){
+        if (oauth2UserInfo != null) {
             String provider = oauth2UserInfo.getProvider();
             String providerId = oauth2UserInfo.getProviderId();
-            String username = provider+"_"+providerId;
+            String username = provider + "_" + providerId;
             String password = bCryptPasswordEncoder.encode("oauth로그인");
             String email = oauth2UserInfo.getEmail();
             String role = "ROLE_USER";
 
             byUsername = userRepository.findByUsername(username);
 
-            if(byUsername == null){
+            if (byUsername == null) {
                 byUsername = User.builder()
                         .username(username)
                         .password(password)
@@ -67,6 +67,6 @@ public class PrincipalOauth2UserService extends DefaultOAuth2UserService {
                 userRepository.save(byUsername);
             }
         }
-        return new PrincipalDetails(byUsername,oAuth2User.getAttributes());
+        return new PrincipalDetails(byUsername, oAuth2User.getAttributes());
     }
 }

@@ -144,7 +144,7 @@ public class QuerydslBasicTest {
      */
     @Test
     void sort() {
-        em.persist(new Member(null,100));
+        em.persist(new Member(null, 100));
         em.persist(new Member("member5", 100));
         em.persist(new Member("member6", 100));
 
@@ -163,7 +163,7 @@ public class QuerydslBasicTest {
     }
 
     @Test
-    void Paging1 () {
+    void Paging1() {
         List<Member> result = queryFactory
                 .selectFrom(member)
                 .orderBy(member.username.desc())
@@ -173,7 +173,7 @@ public class QuerydslBasicTest {
     }
 
     @Test
-    void Paging2 () {
+    void Paging2() {
         QueryResults<Member> queryResults = queryFactory
                 .selectFrom(member)
                 .orderBy(member.username.desc())
@@ -237,7 +237,7 @@ public class QuerydslBasicTest {
 
         assertThat(result)
                 .extracting("username")
-                .containsExactly("member1","member2");
+                .containsExactly("member1", "member2");
     }
 
     /**
@@ -257,7 +257,7 @@ public class QuerydslBasicTest {
 
         assertThat(result)
                 .extracting("username")
-                .containsExactly("teamA","teamB");
+                .containsExactly("teamA", "teamB");
     }
 
     /**
@@ -265,14 +265,14 @@ public class QuerydslBasicTest {
      * JPQL : select m , t from MEmber m left join m.team t on t.name = 'teamA'
      */
     @Test
-    void join_on_filtering(){
+    void join_on_filtering() {
         List<Tuple> result = queryFactory
                 .select(member, team)
                 .from(member)
                 .leftJoin(member.team, team).on(team.name.eq("teamA"))
                 .fetch();
 
-        for(Tuple tuple : result){
+        for (Tuple tuple : result) {
             System.out.println("tuple" + tuple);
         }
     }
@@ -362,7 +362,7 @@ public class QuerydslBasicTest {
                 .fetch();
 
         assertThat(result).extracting("age")
-                .containsExactly(30,40);
+                .containsExactly(30, 40);
     }
 
     @Test
@@ -379,7 +379,7 @@ public class QuerydslBasicTest {
                 .fetch();
 
         assertThat(result).extracting("age")
-                .containsExactly(20,30,40);
+                .containsExactly(20, 30, 40);
     }
 
     @Test
@@ -393,8 +393,8 @@ public class QuerydslBasicTest {
                 .from(member)
                 .fetch();
 
-        for(Tuple tuple : result) {
-            System.out.println("tuple = "  + tuple );
+        for (Tuple tuple : result) {
+            System.out.println("tuple = " + tuple);
         }
     }
     // from 서브 쿼리(인라인뷰)는 지원 X
@@ -430,7 +430,7 @@ public class QuerydslBasicTest {
     }
 
     @Test
-    void constant(){
+    void constant() {
         List<Tuple> result = queryFactory
                 .select(member.username, Expressions.constant("A"))
                 .from(member)
@@ -443,7 +443,7 @@ public class QuerydslBasicTest {
     }
 
     @Test
-    void concat(){
+    void concat() {
         List<String> result = queryFactory
                 .select(member.username.concat("_").concat(member.age.stringValue()))
                 .from(member)
@@ -484,7 +484,7 @@ public class QuerydslBasicTest {
     }
 
     @Test
-    void findDtoByJPQL () {
+    void findDtoByJPQL() {
         em.createQuery("select new com.querydsl.study.querydslstudy.dto.MemberDto(m.username, m.age) from Member m", MemberDto.class)
                 .getResultList();
     }
@@ -513,8 +513,8 @@ public class QuerydslBasicTest {
                 .select(Projections.fields(UserDto.class,
                         member.username.as("name"),
                         ExpressionUtils.as(JPAExpressions
-                        .select(memberSub.age.max())
-                        .from(memberSub),"age")))
+                                .select(memberSub.age.max())
+                                .from(memberSub), "age")))
                 .from(member)
                 .fetch();
 
@@ -548,23 +548,23 @@ public class QuerydslBasicTest {
             System.out.println("memberDto = " + memberDto);
         }
     }
-    
+
     @Test
     public void dynamicQuery_BooleanBuilder() {
         String usernameParam = "member1";
         Integer ageParam = null;
-        
+
         List<Member> result = searchMember1(usernameParam, ageParam);
         assertThat(result.size()).isEqualTo(1);
     }
 
     private List<Member> searchMember1(String usernameCond, Integer ageCond) {
         BooleanBuilder builder = new BooleanBuilder();
-        if(usernameCond != null ){
+        if (usernameCond != null) {
             builder.and(member.username.eq(usernameCond));
         }
 
-        if(ageCond != null) {
+        if (ageCond != null) {
             builder.and(member.age.eq(ageCond));
         }
 
@@ -592,14 +592,14 @@ public class QuerydslBasicTest {
     }
 
     private BooleanExpression usernameEq(String usernameCond) {
-        return usernameCond != null ? member.username.eq(usernameCond): null;
+        return usernameCond != null ? member.username.eq(usernameCond) : null;
     }
 
     private BooleanExpression ageEq(Integer ageCond) {
-        return ageCond != null ? member.age.eq(ageCond): null;
+        return ageCond != null ? member.age.eq(ageCond) : null;
     }
 
-    private BooleanExpression allEq(String usernameCond , Integer ageCond){
+    private BooleanExpression allEq(String usernameCond, Integer ageCond) {
         return usernameEq(usernameCond).and(ageEq(ageCond));
     }
 
@@ -652,7 +652,7 @@ public class QuerydslBasicTest {
             System.out.println("s = " + s);
         }
     }
-    
+
 
 }
 

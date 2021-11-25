@@ -20,7 +20,7 @@ import static com.querydsl.study.querydslstudy.Entity.QMember.member;
 import static com.querydsl.study.querydslstudy.Entity.QTeam.team;
 import static org.springframework.util.StringUtils.hasText;
 
-public class MemberRepositoryImpl implements MemberRepositoryCustom{
+public class MemberRepositoryImpl implements MemberRepositoryCustom {
 
     private final JPAQueryFactory queryFactory;
 
@@ -29,7 +29,7 @@ public class MemberRepositoryImpl implements MemberRepositoryCustom{
     }
 
     @Override
-    public List<MemberTeamDto> search (MemberSearchCondition condition) {
+    public List<MemberTeamDto> search(MemberSearchCondition condition) {
         return queryFactory
                 .select(new QMemberTeamDto(
                         member.id.as("memberId"),
@@ -109,7 +109,7 @@ public class MemberRepositoryImpl implements MemberRepositoryCustom{
                         ageLoe(condition.getAgeLoe())
                 );
 
-        return PageableExecutionUtils.getPage(content,pageable , countQuery::fetchCount);
+        return PageableExecutionUtils.getPage(content, pageable, countQuery::fetchCount);
     }
 
     private BooleanExpression usernameEq(String username) {
@@ -125,6 +125,6 @@ public class MemberRepositoryImpl implements MemberRepositoryCustom{
     }
 
     private BooleanExpression ageLoe(Integer ageLoe) {
-        return ageLoe != null ? member.age.loe(ageLoe) :null;
+        return ageLoe != null ? member.age.loe(ageLoe) : null;
     }
 }

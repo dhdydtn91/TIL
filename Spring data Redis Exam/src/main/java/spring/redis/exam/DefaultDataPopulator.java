@@ -11,7 +11,8 @@ import java.util.Date;
 @Component
 public class DefaultDataPopulator implements ApplicationRunner {
 
-    @Autowired MeetingRepository meetingRepository;
+    @Autowired
+    MeetingRepository meetingRepository;
 
 
     @Override
@@ -23,7 +24,7 @@ public class DefaultDataPopulator implements ApplicationRunner {
 
         meetingRepository.findAll().forEach(m -> {
             System.out.println("---------------");
-            System.out.println(m.getTitle() + " " +m.getStartAt());
+            System.out.println(m.getTitle() + " " + m.getStartAt());
         });
     }
 }

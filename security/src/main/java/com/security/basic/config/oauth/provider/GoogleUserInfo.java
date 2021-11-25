@@ -2,7 +2,7 @@ package com.security.basic.config.oauth.provider;
 
 import java.util.Map;
 
-public class GoogleUserInfo implements Oauth2UserInfo{
+public class GoogleUserInfo implements Oauth2UserInfo {
 
     private Map<String, Object> attributes;
 

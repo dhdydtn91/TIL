@@ -41,11 +41,11 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
         //1.username , password 받아서
         try {
             ObjectMapper om = new ObjectMapper();
-            User user = om.readValue(request.getInputStream(),User.class);
+            User user = om.readValue(request.getInputStream(), User.class);
             System.out.println(user);
 
             UsernamePasswordAuthenticationToken authenticationToken =
-                    new UsernamePasswordAuthenticationToken(user.getUsername(),user.getPassword());
+                    new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword());
 
             //PrincipalDetailsService의 loadUserByUsername() 함수가 실행됨됨
             Authentication authentication =
@@ -59,7 +59,7 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
             //리턴의 이유는 권한 관리를 security가 대신 해주기 떄무에 편하려고 하는 거임.
             //굳이 JWT 토큰을 사용하면서 세션을 만들 이유가 없음. 근데 단지 권한 처리떄문에 session 넣어줍니다.
 
-           return authentication;
+            return authentication;
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -82,6 +82,6 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
                 .withClaim("username", principal.getUser().getUsername())
                 .sign(Algorithm.HMAC512("jwt"));
 
-        response.addHeader("Authorization" , "Bearer " + jwtToken);
+        response.addHeader("Authorization", "Bearer " + jwtToken);
     }
 }

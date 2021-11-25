@@ -19,7 +19,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @Import(RestDocsConfiguration.class)
 @ActiveProfiles("test")
 public class IndexControllerTest extends BaseControllerTest {
-    
+
     @Test
     public void index() throws Exception {
         this.mockMvc.perform(get("/api"))

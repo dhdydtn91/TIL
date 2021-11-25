@@ -24,15 +24,16 @@ public class RedisTemplateTest {
     @Autowired
     RedisCustomRepository redisCustomRepository;
 
-    List<Book>  bookList ;
+    List<Book> bookList;
     Book book;
     Book book2;
     Book book3;
+
     @BeforeEach
     public void setup() {
-        book = new Book("토비의 스프링" , "스프링 동작원리");
-        book2 = new Book("Real Mysql" , "Mysql 동작원리");
-        book3 = new Book("토비의 스프링" , "스프링 동작원리");
+        book = new Book("토비의 스프링", "스프링 동작원리");
+        book2 = new Book("Real Mysql", "Mysql 동작원리");
+        book3 = new Book("토비의 스프링", "스프링 동작원리");
         bookList = List.of(book, book2, book3);
     }
 
@@ -57,7 +58,7 @@ public class RedisTemplateTest {
         Set<Object> savedBookList = stringObjectSetOperations.members("BookList");
 
         assertThat(savedBookList.size()).isEqualTo(2);
-        assertThat(savedBookList).containsExactly(bookList.get(1).getTitle() , bookList.get(0).getTitle());
+        assertThat(savedBookList).containsExactly(bookList.get(1).getTitle(), bookList.get(0).getTitle());
     }
 
     @Test
@@ -71,6 +72,6 @@ public class RedisTemplateTest {
         Set<Object> savedBookList = stringObjectSetOperations.members("BookList");
 
         assertThat(savedBookList.size()).isEqualTo(2);
-        assertThat(savedBookList).containsExactly(bookList.get(1).getTitle() , bookList.get(0).getTitle());
+        assertThat(savedBookList).containsExactly(bookList.get(1).getTitle(), bookList.get(0).getTitle());
     }
 }

@@ -25,13 +25,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private final UserRepository userRepository;
 
     @Bean
-    public BCryptPasswordEncoder bCryptPasswordEncoder(){
+    public BCryptPasswordEncoder bCryptPasswordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-      //  http.addFilterBefore(new MyFilter3(), BasicAuthenticationFilter.class);
+        //  http.addFilterBefore(new MyFilter3(), BasicAuthenticationFilter.class);
         http.csrf().disable();
         http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
@@ -39,7 +39,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .formLogin().disable()
                 .httpBasic().disable()
                 .addFilter(new JwtAuthenticationFilter(authenticationManager())) // AuthenticationManager
-                .addFilter(new JwtAuthorizationFilter(authenticationManager(),userRepository))
+                .addFilter(new JwtAuthorizationFilter(authenticationManager(), userRepository))
                 .authorizeRequests()
                 .antMatchers("/api/v1/user/**")
                 .access("hasRole('ROLE_USER') or hasRole('ROLE_MANAGER') or hasRole('ROLE_ADMIN')")
@@ -48,6 +48,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/api/v1/admin/**")
                 .access("hasRole('ROLE_ADMIN')")
                 .anyRequest().permitAll()
-               ;
+        ;
     }
 }

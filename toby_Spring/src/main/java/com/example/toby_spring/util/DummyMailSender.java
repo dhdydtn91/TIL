@@ -7,7 +7,7 @@ import org.springframework.mail.SimpleMailMessage;
 public class DummyMailSender implements MailSender {
     @Override
     public void send(SimpleMailMessage simpleMailMessage) throws MailException {
-        
+
     }
 
     @Override

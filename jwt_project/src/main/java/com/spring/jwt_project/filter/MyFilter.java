@@ -10,8 +10,8 @@ public class MyFilter implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 
-        HttpServletRequest req = (HttpServletRequest)request;
-        HttpServletResponse res = (HttpServletResponse)response;
+        HttpServletRequest req = (HttpServletRequest) request;
+        HttpServletResponse res = (HttpServletResponse) response;
 
 
         chain.doFilter(req, res);

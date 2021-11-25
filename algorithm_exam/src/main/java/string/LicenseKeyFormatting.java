@@ -4,17 +4,17 @@ import java.util.Locale;
 
 public class LicenseKeyFormatting {
 
-    public static String solve(String s, int k){
-        s = s.replace("-","");
+    public static String solve(String s, int k) {
+        s = s.replace("-", "");
         s = s.toUpperCase();
         int keyLength = s.length();
 
-        StringBuilder  builder = new StringBuilder();
+        StringBuilder builder = new StringBuilder();
 
         int index = 0;
 
-        for(int i = keyLength-1 ; i > -1 ; i--){
-            if(index % k == 0 && index !=0){
+        for (int i = keyLength - 1; i > -1; i--) {
+            if (index % k == 0 && index != 0) {
                 builder.append("-");
             }
             builder.append(s.charAt(i));

@@ -5,7 +5,7 @@ public class Money {
 
     private final BigDecimal amount;
 
-    public static Money wons(long amount){
+    public static Money wons(long amount) {
         return new Money(BigDecimal.valueOf(amount));
     }
 
@@ -14,10 +14,10 @@ public class Money {
     }
 
     Money(BigDecimal amount) {
-        this.amount = amount ;
+        this.amount = amount;
     }
 
-    public Money plus(Money amount){
+    public Money plus(Money amount) {
         return new Money(this.amount.add(amount.amount));
     }
 
@@ -29,12 +29,12 @@ public class Money {
         return new Money(this.amount.multiply(BigDecimal.valueOf(percent)));
     }
 
-    public boolean isLessThan(Money other){
-        return amount.compareTo(other.amount)<0;
+    public boolean isLessThan(Money other) {
+        return amount.compareTo(other.amount) < 0;
     }
 
     public boolean isGreaterThanOrEqual(Money other) {
-        return amount.compareTo(other.amount) >=0;
+        return amount.compareTo(other.amount) >= 0;
     }
 
 }

@@ -19,10 +19,10 @@ import java.util.Collection;
 import java.util.Map;
 
 @Getter
-public class PrincipalDetails implements UserDetails , OAuth2User {
+public class PrincipalDetails implements UserDetails, OAuth2User {
 
     private final User user;
-    private Map<String,Object> attributes;
+    private Map<String, Object> attributes;
 
     public PrincipalDetails(User user) {
         this.user = user;

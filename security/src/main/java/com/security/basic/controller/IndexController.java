@@ -29,7 +29,7 @@ public class IndexController {
     @Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 
-    @GetMapping({"","/"})
+    @GetMapping({"", "/"})
     public String index() {
         return "index";
     }
@@ -76,20 +76,23 @@ public class IndexController {
 
     @Secured("ROLE_ADMIN")
     @GetMapping("/info")
-    public @ResponseBody String info() {
+    public @ResponseBody
+    String info() {
         return "개인정보";
     }
 
     @PreAuthorize("hasRole('ROLE_MANAGER') or hasRole('ROLE_ADMIN')")
     @GetMapping("/data")
-    public @ResponseBody String data() {
+    public @ResponseBody
+    String data() {
         return "데이타정보";
     }
 
 
     @GetMapping("/test/login")
-    public @ResponseBody String testLogin(Authentication authentication,
-                                          @AuthenticationPrincipal PrincipalDetails userDetails){
+    public @ResponseBody
+    String testLogin(Authentication authentication,
+                     @AuthenticationPrincipal PrincipalDetails userDetails) {
         System.out.println("/test/login =======");
         PrincipalDetails principal = (PrincipalDetails) authentication.getPrincipal();
         System.out.println("authentication: " + principal.getUser());
@@ -98,11 +101,12 @@ public class IndexController {
     }
 
     @GetMapping("/test/oauth/login")
-    public @ResponseBody String testLogin(Authentication authentication,
-                                          @AuthenticationPrincipal OAuth2User oAuthUser){
+    public @ResponseBody
+    String testLogin(Authentication authentication,
+                     @AuthenticationPrincipal OAuth2User oAuthUser) {
         System.out.println("/test/login =======");
         OAuth2User oAuth2User = (OAuth2User) authentication.getPrincipal();
-        System.out.println("authentication: "+ oAuth2User.getAttributes());
+        System.out.println("authentication: " + oAuth2User.getAttributes());
         System.out.println("oAuthUser" + oAuth2User.getAttributes());
         return "세션 정보 확인하기";
     }

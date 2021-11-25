@@ -35,7 +35,7 @@ class EventControllerTest extends BaseControllerTest {
 
     @Autowired
     EventRepository eventRepository;
-    
+
     @Test
     @Description("정상적으로 이벤트를 생성하는 테스트")
     void createEvent() throws Exception {
@@ -54,9 +54,9 @@ class EventControllerTest extends BaseControllerTest {
         // Mockito.when(eventRepository.save(event)).thenReturn(event);
 
         mockMvc.perform(post("/api/events")
-                .contentType(MediaType.APPLICATION_JSON)
-                .accept(MediaTypes.HAL_JSON)
-                .content(objectMapper.writeValueAsString(event)))
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .accept(MediaTypes.HAL_JSON)
+                        .content(objectMapper.writeValueAsString(event)))
                 .andDo(print())
                 .andExpect(status().isCreated())
                 .andExpect(jsonPath("id").exists())
@@ -137,9 +137,9 @@ class EventControllerTest extends BaseControllerTest {
         // Mockito.when(eventRepository.save(event)).thenReturn(event);
 
         mockMvc.perform(post("/api/events")
-                .contentType(MediaType.APPLICATION_JSON)
-                .accept(MediaTypes.HAL_JSON)
-                .content(objectMapper.writeValueAsString(event)))
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .accept(MediaTypes.HAL_JSON)
+                        .content(objectMapper.writeValueAsString(event)))
                 .andDo(print())
                 .andExpect(status().isBadRequest())
         ;
@@ -151,8 +151,8 @@ class EventControllerTest extends BaseControllerTest {
         EventDto eventDto = EventDto.builder().build();
 
         this.mockMvc.perform(post("/api/events")
-                .contentType(MediaType.APPLICATION_JSON)
-                .content(this.objectMapper.writeValueAsString(eventDto)))
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(this.objectMapper.writeValueAsString(eventDto)))
                 .andExpect(status().isBadRequest());
     }
 
@@ -173,8 +173,8 @@ class EventControllerTest extends BaseControllerTest {
                 .build();
 
         this.mockMvc.perform(post("/api/events")
-                .contentType(MediaType.APPLICATION_JSON)
-                .content(this.objectMapper.writeValueAsString(eventDto)))
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(this.objectMapper.writeValueAsString(eventDto)))
                 .andExpect(status().isBadRequest())
                 .andDo(print())
                 .andExpect(jsonPath("errors[0].objectName").exists())
@@ -192,10 +192,10 @@ class EventControllerTest extends BaseControllerTest {
         });
 
         this.mockMvc.perform(get("/api/events")
-                .param("page", "1")
-                .param("size", "10")
-                .param("sort", "name,DESC")
-        )
+                        .param("page", "1")
+                        .param("size", "10")
+                        .param("sort", "name,DESC")
+                )
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("page").exists())
@@ -213,7 +213,7 @@ class EventControllerTest extends BaseControllerTest {
         Event event = this.generateEvent(100);
 
         this.mockMvc.perform(get("/api/events/{id}", event.getId())
-                .param("id", "100"))
+                        .param("id", "100"))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("id").exists())
@@ -242,8 +242,8 @@ class EventControllerTest extends BaseControllerTest {
         eventDto.setName(eventName);
 
         this.mockMvc.perform(put("/api/events/{id}", event.getId())
-                .contentType(MediaType.APPLICATION_JSON)
-                .content(this.objectMapper.writeValueAsString(eventDto)))
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(this.objectMapper.writeValueAsString(eventDto)))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("name").value(eventName))
@@ -258,8 +258,8 @@ class EventControllerTest extends BaseControllerTest {
         EventDto eventDto = new EventDto();
 
         this.mockMvc.perform(put("/api/events/{id}", event.getId())
-                .contentType(MediaType.APPLICATION_JSON)
-                .content(this.objectMapper.writeValueAsString(eventDto)))
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(this.objectMapper.writeValueAsString(eventDto)))
                 .andDo(print())
                 .andExpect(status().isBadRequest());
 
@@ -273,8 +273,8 @@ class EventControllerTest extends BaseControllerTest {
         eventDto.setBasePrice(20000);
         eventDto.setMaxPrice(1000);
         this.mockMvc.perform(put("/api/events/{id}", event.getId())
-                .contentType(MediaType.APPLICATION_JSON)
-                .content(this.objectMapper.writeValueAsString(eventDto)))
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(this.objectMapper.writeValueAsString(eventDto)))
                 .andDo(print())
                 .andExpect(status().isBadRequest());
 
@@ -287,8 +287,8 @@ class EventControllerTest extends BaseControllerTest {
         EventDto eventDto = this.modelMapper.map(event, EventDto.class);
 
         this.mockMvc.perform(put("/api/events/123123")
-                .contentType(MediaType.APPLICATION_JSON)
-                .content(this.objectMapper.writeValueAsString(eventDto)))
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(this.objectMapper.writeValueAsString(eventDto)))
                 .andDo(print())
                 .andExpect(status().isNotFound());
 

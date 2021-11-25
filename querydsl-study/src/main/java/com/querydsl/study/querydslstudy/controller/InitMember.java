@@ -19,7 +19,7 @@ public class InitMember {
     private final InitMemberService initMemberService;
 
     @PostConstruct
-    public void init () {
+    public void init() {
         initMemberService.init();
     }
 

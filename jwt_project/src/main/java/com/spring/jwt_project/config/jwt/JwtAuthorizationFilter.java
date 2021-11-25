@@ -37,12 +37,12 @@ public class JwtAuthorizationFilter extends BasicAuthenticationFilter {
         System.out.println("jwtHeader " + jwtHeader);
 
         //JWT 토큰을 검증을 해서 정상적인 사용자인지 확인
-        if(jwtHeader == null || !jwtHeader.startsWith("Bearer")){
-            chain.doFilter(request,response);
+        if (jwtHeader == null || !jwtHeader.startsWith("Bearer")) {
+            chain.doFilter(request, response);
             return;
         }
 
-        String token = request.getHeader("Authorization").replace("Bearer ","");
+        String token = request.getHeader("Authorization").replace("Bearer ", "");
 
         String username = JWT.require(Algorithm.HMAC512("jwt"))
                 .build()
@@ -50,18 +50,18 @@ public class JwtAuthorizationFilter extends BasicAuthenticationFilter {
                 .getClaim("username")
                 .asString();
 
-        if(username != null){
+        if (username != null) {
             System.out.println(username);
             User userEntity = userRepository.findByUsername(username);
             PrincipalDetails principalDetails = new PrincipalDetails(userEntity);
             //Jwt토큰 서명을 통해서 서명이 정상이면 Authentication 객체를 만들어준다.
             Authentication authentication =
-                    new UsernamePasswordAuthenticationToken(principalDetails,null, principalDetails.getAuthorities());
+                    new UsernamePasswordAuthenticationToken(principalDetails, null, principalDetails.getAuthorities());
 
             //강제로 시큐리티 세션에 접근하여 Authentication객체를 저장
             SecurityContextHolder.getContext().setAuthentication(authentication);
 
-            chain.doFilter(request,response);
+            chain.doFilter(request, response);
         }
 
     }
