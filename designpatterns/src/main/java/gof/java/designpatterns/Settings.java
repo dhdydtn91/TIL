@@ -1,6 +1,8 @@
 package gof.java.designpatterns;
 
-public class Settings {
+import java.io.Serializable;
+
+public class Settings implements Serializable {
 
     private Settings() {}
 
@@ -10,5 +12,10 @@ public class Settings {
 
     public static Settings getInstance(){
         return SettingsHolder.INSTANCE;
+    }
+
+    //역직렬화 직렬화 사용 시 대응 방안
+    protected Object readResolve(){
+        return getInstance();
     }
 }
