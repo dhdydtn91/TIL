@@ -1,4 +1,4 @@
-package gof.java.designpatterns;
+package gof.java.designpatterns.singleton;
 
 import java.io.*;
 import java.lang.reflect.Constructor;
