@@ -1,7 +1,5 @@
 package gof.java.designpatterns.factorymethod.after;
 
-import gof.java.designpatterns.factorymethod.after.Ship;
-
 public interface ShipFactory {
 
     default Ship orderShip(String name, String email){

@@ -2,14 +2,14 @@ package gof.java.designpatterns.factorymethod.after;
 
 public class Client {
 
+    private void print (ShipFactory shipFactory, String name, String email){
+        System.out.println(shipFactory.orderShip(name,email));
+    }
     public static void main(String[] args) {
         Client client = new Client();
 
-        Ship whiteShip = new WhiteShipFactory().orderShip("Whiteship", "dhdydtn1993@gmail.comn");
-        System.out.println(whiteShip);
-
-        Ship blackShip = new WhiteShipFactory().orderShip("Blackship", "dhdydtn1993@gmail.comn");
-        System.out.println(blackShip);
+        client.print(new WhiteShipFactory() , "whiteship", "dhdydtn1993@gmail.comn");
+        client.print(new BlackShipFactory() , "blackship", "dhdydtn1993@gmail.comn");
     }
 
 }

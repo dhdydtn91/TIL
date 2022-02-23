@@ -1,8 +1,8 @@
 package gof.java.designpatterns.factorymethod.after;
 
-public class Blackship extends Ship{
+public class BlackShip extends Ship{
 
-    public Blackship() {
+    public BlackShip() {
         setName("blackship");
         setColor("black");
         setLogo("⚓️");
