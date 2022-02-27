@@ -14,5 +14,5 @@ public class SpringBeanFactoryExample {
         BeanFactory javaFactory = new AnnotationConfigApplicationContext(Config.class);
         String hi = javaFactory.getBean("hello", String.class);
         System.out.println(hi);
-    }˚
+    }
 }
