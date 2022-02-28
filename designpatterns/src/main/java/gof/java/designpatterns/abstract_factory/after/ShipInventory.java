@@ -1,8 +1,8 @@
 package gof.java.designpatterns.abstract_factory.after;
 
 
-import gof.java.designpatterns.factorymethod.after.Ship;
-import gof.java.designpatterns.factorymethod.after.ShipFactory;
+import gof.java.designpatterns.abstract_factory.after.after.Ship;
+import gof.java.designpatterns.abstract_factory.after.after.ShipFactory;
 
 public class ShipInventory {
 

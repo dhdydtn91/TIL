@@ -1,4 +1,4 @@
-package gof.java.designpatterns.factorymethod.after;
+package gof.java.designpatterns.abstract_factory.after.after;
 
 public interface ShipFactory {
 

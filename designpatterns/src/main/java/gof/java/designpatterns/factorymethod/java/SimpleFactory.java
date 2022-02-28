@@ -1,8 +1,8 @@
 package gof.java.designpatterns.factorymethod.java;
 
 
-import gof.java.designpatterns.factorymethod.after.BlackShip;
-import gof.java.designpatterns.factorymethod.after.WhiteShip;
+import gof.java.designpatterns.abstract_factory.after.after.BlackShip;
+import gof.java.designpatterns.abstract_factory.after.after.WhiteShip;
 
 public class SimpleFactory {
 

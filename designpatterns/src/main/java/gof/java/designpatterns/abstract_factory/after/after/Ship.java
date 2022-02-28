@@ -1,4 +1,4 @@
-package gof.java.designpatterns.factorymethod.after;
+package gof.java.designpatterns.abstract_factory.after.after;
 
 import gof.java.designpatterns.abstract_factory.after.Anchor;
 import gof.java.designpatterns.abstract_factory.after.Wheel;

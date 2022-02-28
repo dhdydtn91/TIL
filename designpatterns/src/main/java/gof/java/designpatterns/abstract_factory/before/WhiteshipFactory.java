@@ -1,9 +1,9 @@
 package gof.java.designpatterns.abstract_factory.before;
 
 
-import gof.java.designpatterns.factorymethod.after.Ship;
-import gof.java.designpatterns.factorymethod.after.ShipFactory;
-import gof.java.designpatterns.factorymethod.after.WhiteShip;
+import gof.java.designpatterns.abstract_factory.after.after.Ship;
+import gof.java.designpatterns.abstract_factory.after.after.ShipFactory;
+import gof.java.designpatterns.abstract_factory.after.after.WhiteShip;
 
 public class WhiteshipFactory implements ShipFactory {
 
