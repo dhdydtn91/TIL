@@ -1,4 +1,4 @@
-package Graph;
+package graph;
 
 import java.util.*;
 
@@ -15,7 +15,7 @@ public class WordLadder {
     public int ladderLength_neighbor(String beginWord, String endWord, List<String> wordList) {
         if(wordList == null || !wordList.contains(endWord)) return 0;
 
-        Queue<String> queue = new LinkedList();
+        LinkedList<String>queue = new LinkedList<String>();
         Set<String> dict = new HashSet<>(wordList);
         queue.offer(beginWord);
         dict.add(endWord);

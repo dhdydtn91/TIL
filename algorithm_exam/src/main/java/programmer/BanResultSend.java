@@ -62,6 +62,7 @@ public class BanResultSend
             // 결과 만들기
             answer[i] = count;
         }
+
         return answer;
     }
 }

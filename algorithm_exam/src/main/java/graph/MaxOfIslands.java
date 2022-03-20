@@ -1,6 +1,4 @@
-package Graph;
-
-import java.util.Stack;
+package graph;
 
 public class MaxOfIslands {
 
